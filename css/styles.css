@@ -382,10 +382,11 @@ input[type='checkbox'] {
 .navbar .navbar-brand {
 	padding-top: 0.125rem;
 	padding-bottom: 0.125rem;
+	text-decoration: none;
 }
 
 .navbar .logo-image img {
-    width: 118px;
+    /* width: 118px; */
 	height: 36px;
 }
 
