@@ -583,6 +583,7 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  margin: 0;
 }
 
 .no-gutters {
@@ -607,6 +608,16 @@ pre code {
   padding-right: 15px;
   padding-left: 15px;
 }
+
+.col-lg-shawn {
+  /* position: relative; */
+  /* width: 100%; */
+  flex: 1 1 50%;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+
 
 .col {
   -ms-flex-preferred-size: 0;

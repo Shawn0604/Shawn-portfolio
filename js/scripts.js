@@ -76,3 +76,18 @@
 	});
 
 })(jQuery);
+
+document.addEventListener("DOMContentLoaded", function() {
+    const catImage = document.getElementById("cat-image");
+
+    fetch("https://api.thecatapi.com/v1/images/search")
+        .then(response => response.json())
+        .then(data => {
+            catImage.src = data[0].url;
+            catImage.onload = () => {
+                catImage.style.display = "block"; // 圖片載入完成後顯示
+            };
+        })
+        .catch(error => console.error("Error fetching cat image:", error));
+});
+

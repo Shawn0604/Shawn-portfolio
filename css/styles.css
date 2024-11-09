@@ -521,7 +521,7 @@ input[type='checkbox'] {
 .header {
 	padding-top: 7rem;
 	padding-bottom: 5.5rem;
-	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/header-background.jpg') center center no-repeat;
+	background-color: #333333;
 	background-size: cover;
 	text-align: center;
 }
@@ -1103,8 +1103,8 @@ a:hover.back-to-top {
 
 	/* Header */
 	.header {
-		padding-top: 15rem;
-		padding-bottom: 14rem;
+		padding-top: 10rem;
+		padding-bottom: 5rem;
 		text-align: left;
 	}
 	/* end of header */
@@ -1220,8 +1220,8 @@ a:hover.back-to-top {
 
 	/* Header */
 	.header {
-		padding-top: 18.25rem;
-		padding-bottom: 17.25rem;
+		padding-top: 10rem;
+		padding-bottom: 5rem;
 	}
 	/* end of header */
 
@@ -1278,3 +1278,39 @@ a:hover.back-to-top {
 	/* end of extra pages */
 }
 /* end of min-width 1200px */
+
+
+#cat-container {
+    width: 100%; 
+    max-width: 300px; 
+    margin: auto;
+}
+
+#cat-image {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover; 
+    border-radius: 8px; 
+    border: 2px solid #ccc; 
+    padding: 4px; 
+}
+
+.image-circle {
+    width: 400px; 
+    height: 400px;
+    background-color: #fdea9f; 
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto; 
+	overflow: hidden;
+}
+
+.image-circle img {
+    width: 150%; 
+    height: auto;
+    border-radius: 30%; 
+    object-fit: cover;
+}
