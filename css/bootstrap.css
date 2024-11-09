@@ -551,6 +551,11 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+.icon-container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 @media (min-width: 576px) {
   .container, .container-sm {
@@ -568,12 +573,17 @@ pre code {
   .container, .container-sm, .container-md, .container-lg {
     max-width: 960px;
   }
+
+  .col-lg-shawn {
+    padding-left: 200px;
+  }
 }
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
     max-width: 1140px;
   }
+
 }
 
 .row {
@@ -608,11 +618,18 @@ pre code {
   padding-right: 15px;
   padding-left: 15px;
 }
+.col-lg-icon {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  /* padding-left: 15px; */
+}
 
 .col-lg-shawn {
   /* position: relative; */
   /* width: 100%; */
   flex: 1 1 50%;
+  padding-top: 50px;
   padding-right: 20px;
   padding-left: 20px;
 }

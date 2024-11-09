@@ -855,9 +855,8 @@ input[type='checkbox'] {
 /*     Footer     */
 /******************/
 .footer {
-	padding-top: 6.25rem;
-	padding-bottom: 2rem;
-	background-color: #24262a;
+	padding-top: 1rem;
+	background-color: #333333;
 	text-align: center;
 }
 
@@ -895,8 +894,8 @@ input[type='checkbox'] {
 /*     Copyright     */
 /*********************/
 .copyright {
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+	padding-top: 3rem;
+	padding-bottom: 2rem;
 	background-color: #24262a;
 	text-align: center;
 }
@@ -1197,6 +1196,12 @@ a:hover.back-to-top {
 		margin-left: 1rem;
 	}
 	/* end of extra pages */
+	.footer {
+		padding-top: 1rem;
+		background-color: #333333;
+		text-align: left;
+	}
+	
 }
 /* end of min-width 992px */
 
@@ -1310,7 +1315,7 @@ a:hover.back-to-top {
 }
 
 .image-circle img {
-    width: 150%; 
+    width: 100%; 
     height: auto;
     border-radius: 30%; 
     object-fit: cover;
