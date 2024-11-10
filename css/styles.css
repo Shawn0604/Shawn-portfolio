@@ -136,6 +136,7 @@ a:hover {
 
 .blue {
 	color: #2259ec;
+	text-align: center; 
 }
 
 .bg-gray {
@@ -681,12 +682,14 @@ input[type='checkbox'] {
 .basic-3 .image-container img {
 	margin: 0;
 	transition: all 0.2s;
+	/* border: 1px solid black;  */
 }
 
 .basic-3 .image-container:hover img {
 	-moz-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
+	/* border: 1px solid black;  */
 } 
 /* end of hover animation */
 
@@ -1235,6 +1238,7 @@ a:hover.back-to-top {
 	/* About */
 	.basic-1 .text-container.first {
 		margin-right: 2rem;
+		width: 500px;
 	}
 
 	.basic-1 .text-container.second {
@@ -1320,3 +1324,36 @@ a:hover.back-to-top {
     border-radius: 30%; 
     object-fit: cover;
 }
+
+table {
+	width: 40%;
+	border-collapse: collapse; 
+	margin: 0 auto;
+  }
+  
+table th{
+	border: 1px solid black; 
+	padding: 8px;
+	text-align: center;
+	}
+table td {
+	border: 1px solid black; 
+	padding: 8px;
+	}
+
+table th.short-column {
+	width: 20px;  
+	}
+
+.center-link {
+	text-align: center; 
+	margin: 0 auto;  
+	}
+	
+	.gray-line {
+		border: 0; 
+		border-top: 2px solid rgb(157, 157, 157); 
+		width: 100%; 
+		margin: 20px 0; 
+	  }
+	  

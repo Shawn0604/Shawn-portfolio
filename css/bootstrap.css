@@ -473,6 +473,7 @@ mark,
 .img-fluid {
   max-width: 100%;
   height: auto;
+  
 }
 
 .img-thumbnail {
@@ -1344,7 +1345,7 @@ pre code {
   .col-lg-4 {
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
-    max-width: 33.333333%;
+    max-width: 50%;
   }
   .col-lg-5 {
     -ms-flex: 0 0 41.666667%;
@@ -1484,6 +1485,16 @@ pre code {
   }
 }
 
+@media (max-width: 1200px) and (min-width: 992px) {
+  .row {
+      flex-direction: column;
+      margin-right: 0;
+      margin-left: 0;
+  }
+  .col-lg-4 {
+    max-width: 100%;
+}
+}
 @media (min-width: 1200px) {
   .col-xl {
     -ms-flex-preferred-size: 0;
