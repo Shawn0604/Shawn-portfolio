@@ -85,9 +85,30 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(data => {
             catImage.src = data[0].url;
             catImage.onload = () => {
-                catImage.style.display = "block"; // 圖片載入完成後顯示
+                catImage.style.display = "block"; 
             };
         })
         .catch(error => console.error("Error fetching cat image:", error));
 });
 
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const cname = document.getElementById("cname").value;
+    const cemail = document.getElementById("cemail").value;
+    const cmessage = document.getElementById("cmessage").value;
+
+    emailjs.send("work_application", "template_1mh8agq", {
+        name: cname,
+        email: cemail,
+        message: cmessage
+    }, "yIfoACSrweOOG7v6r")
+    .then(function(response) {
+        console.log("Email sent successfully!", response.status, response.text);
+        alert("Thank you! Your message has been sent.");
+        document.getElementById("contactForm").reset();
+    }, function(error) {
+        console.error("Failed to send email:", error);
+        alert("Failed to send message. Please try again later.");
+    });
+});

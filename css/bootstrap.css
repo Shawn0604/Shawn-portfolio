@@ -631,8 +631,14 @@ pre code {
   /* width: 100%; */
   flex: 1 1 50%;
   padding-top: 50px;
-  padding-right: 20px;
+  /* padding-right: 20px; */
   padding-left: 20px;
+}
+@media (max-width: 992px) {
+  .col-lg-shawn {
+    padding-left: 0px;
+  }
+
 }
 
 
@@ -1356,6 +1362,7 @@ pre code {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
+    align-content: center;
   }
   .col-lg-7 {
     -ms-flex: 0 0 58.333333%;
@@ -1486,7 +1493,7 @@ pre code {
 }
 
 @media (max-width: 1200px) and (min-width: 992px) {
-  .row {
+  .row-column {
       flex-direction: column;
       margin-right: 0;
       margin-left: 0;
