@@ -33,6 +33,8 @@ Colors:
 /**************************/
 /*     General Styles     */
 /**************************/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
 body,
 html {
     width: 100%;
@@ -43,6 +45,28 @@ body, p {
 	color: #4d5055; 
 	font: 400 1rem/1.625rem "Open Sans", sans-serif;
 }
+
+  #cat-container {
+    text-align: center;
+  }
+
+  #refresh-cat {
+    background-color: #0b36a8;
+    border-color: #0b36a8;
+    color: white;
+    margin-top: 12px;
+	font-family: 'Poppins';
+	font-size: 14px; 
+	border-radius: 5px;
+	cursor: pointer;
+  }
+
+  #refresh-cat:hover {
+    background-color: transparent;
+    color:  white;
+    border-color:  white;
+    text-decoration: none;
+  }
 
 h1 {
 	color: #24262a;

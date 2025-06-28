@@ -77,19 +77,27 @@
 
 })(jQuery);
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const catImage = document.getElementById("cat-image");
+    const refreshButton = document.getElementById("refresh-cat");
 
-    fetch("https://api.thecatapi.com/v1/images/search")
-        .then(response => response.json())
-        .then(data => {
-            catImage.src = data[0].url;
-            catImage.onload = () => {
-                catImage.style.display = "block"; 
-            };
-        })
-        .catch(error => console.error("Error fetching cat image:", error));
+    function loadCatImage() {
+        fetch("https://api.thecatapi.com/v1/images/search")
+            .then(response => response.json())
+            .then(data => {
+                catImage.src = data[0].url;
+                catImage.onload = () => {
+                    catImage.style.display = "block";
+                };
+            })
+            .catch(error => console.error("Error fetching cat image:", error));
+    }
+
+    loadCatImage();
+
+    refreshButton.addEventListener("click", loadCatImage);
 });
+
 
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault();
